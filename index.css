@@ -1,38 +1,86 @@
-/**body{
+body {
     background-image: linear-gradient(rgb(55, 40, 95), black);
-    background-repeat: space;
-    height: 100vh;
-}*/
+    background-repeat: initial;
+}
 
 * {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
     box-sizing: border-box;
-    /**color: rgb(203, 129, 104);*/
+    color: rgb(203, 129, 104);
+}
+
+h1, h2{
+    font-family: 'Quattrocento'; 
 }
 
 nav, footer {
-    background-color: lightgray;
     height: 50px;
-    padding: 10px;
+}
+
+footer > ul{
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
 }
 
 img {
-    border-radius: 50%;
-    background-color: lightgray;
     height: 100px;
     width: 100px;
     margin-bottom: 7%;
 }
 
+.logos, .contact{
+    width: 30px;
+    height: 30px;
+}
+
+.contact{
+    text-align: unset;
+    flex: 1;
+}
+
+.logos{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.headshot{
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px rgb(178, 98, 125);
+}
+.screenshot{
+    width: 70%;
+    height: initial;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+.burger{
+    border-radius: 0%;
+    height: 30px;
+    width: 30px;
+    color: white;
+    box-shadow: none;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
 div {
-    height: 200px;
-    width: 80%;
+    font-family: 'Fanwood Text';
+    font-size: 16px;
+    text-align: initial;
+    line-height: 24px;
+    height: initial;
+    width: 96%;
+    padding: 5px;
     border-radius: 5px;
-    background-color: lightgray;
     margin: auto;
     margin-bottom: 5%;
+    background-color: rgb(128, 82, 128, 0.5);
+    box-shadow: 0px 0px 4px rgb(178, 98, 125);
 }
 
 @media screen and (min-width: 480px) {
@@ -40,7 +88,6 @@ div {
         display: flex;
         justify-content: center;
     }
-
     .project-section {
         display: flex;
         flex-direction: row-reverse;
@@ -67,20 +114,21 @@ div {
         justify-content: center;
         justify-content: space-evenly;
     }
-
-    nav{
+    nav {
         position: absolute;
         left: 0;
         width: 50px;
         height: 100vmax;
         margin: 0px;
     }
-
-    main{
+    main {
         padding-left: 50px;
     }
-
-    footer{
+    footer {
         display: none;
     }
+}
+
+.hide{
+    display: none;
 }
