@@ -12,11 +12,13 @@
 
 <body>
     <nav role="navigation">
-        <ul>
-            <li class="hide"></li>
-            <li class="hide"></li>
-            <li class="hide"></li>
-            <li><img class="burger" role="menu" src="https://i.ibb.co/N6WpBGR/hamburger.png"></li>
+        <ul class="nav">
+            <li><img class="burger" id="burger" role="menu" src="https://i.ibb.co/N6WpBGR/hamburger.png">
+                <ul>
+                    <li><a href="#project-section">Projects</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <main role="main">
@@ -26,46 +28,52 @@
 
         <section class="bio-section">
             <div class="bio">
-                <p>Mahmood Nihad is a student of the Full Stack Web Development Career Path bootcamp at Thinkful , he’s
-                    an amature photographer, a cat person and of course a Gamer. Dark Souls is the greatest game ever
-                    made. Development has been his passion ever since he was first introduced to the concepts of
+                <p>Mahmood Nihad is a student of the Full Stack Web Development Career Path bootcamp at Thinkful,
+                    an amature photographer and a Gamer. Enjoys dark Souls a lot. Development has been his passion ever
+                    since he was first introduced to the concepts of
                     programming and how a world problem can be translated into logical statements that a machine can
-                    understand and interpret. 
+                    understand and interpret.
                 </p>
             </div>
             <img src="https://i.ibb.co/3dxqs7s/headshot.jpg" class="headshot">
         </section>
 
-        <section class="project-section">
+        <section class="project-section" id="project-section">
             <h2>Projects</h2>
-            <img src="https://i.ibb.co/k1rQB4z/quiz-app-mobile.jpg" class="screenshot">
+            <a href="https://mzibari.github.io/quiz-bloc/">
+                <img src="https://i.ibb.co/k1rQB4z/quiz-app-mobile.jpg" class="screenshot mobile">
+                <img src="https://i.ibb.co/zX6PpMh/quiz-app-feedback.jpg" class="screenshot desktop">
+            </a>
+            <ul class="technology">
+                <li>
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png" class="logos">
+                </li>
+                <li>
+                    <img src="https://www.pngkey.com/png/full/141-1415612_css-css3-logo-black-and-white.png"
+                        class="logos">
+                </li>
+                <li>
+                    <img src="https://jacobslack.com/wp-content/uploads/2019/08/JS-logo.png" class="logos">
+                </li>
+                <li>
+                    <img src="https://www.upstatewebbuilders.net/images/jquery.png" class="logos">
+                </li>
+            </ul>
             <div class="project">
                 <p>Quiz App: 10 Trick Questions Quiz<br>
                     A short quiz that takes the user through 10 tricky questions</p>
-                    <a href="https://mzibari.github.io/quiz-bloc/">Live link</a><br>
-                    <a href="https://github.com/mzibari/quiz-bloc">GitHub Repo</a>
-                    <ul>
-                        <li>
-                            <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png" class="logos">
-                        </li>
-                        <li>
-                            <img src="https://www.pngkey.com/png/full/141-1415612_css-css3-logo-black-and-white.png" class="logos">
-                        </li>
-                        <li>
-                            <img src="https://jacobslack.com/wp-content/uploads/2019/08/JS-logo.png" class="logos">
-                        </li>
-                        <li>
-                            <img src="https://www.upstatewebbuilders.net/images/jquery.png" class="logos">
-                        </li>
-                    </ul>
+                <a href="https://mzibari.github.io/quiz-bloc/">Live link</a><br>
+                <a href="https://github.com/mzibari/quiz-bloc">GitHub Repo</a>
+
             </div>
         </section>
 
     </main>
-    <footer role="content-info">
-        <ul>
+    <footer role="contact-info" id="contact-info">
+        <ul class="contact-ul">
             <li>
-                <a href="https://www.linkedin.com/in/mahmood-nihad-083739142/""><img src="https://i.ibb.co/42wS1dV/linkedin.png" class="contact"></a>
+                <a href="https://www.linkedin.com/in/mahmood-nihad-083739142/""><img src="
+                    https://i.ibb.co/42wS1dV/linkedin.png" class="contact"></a>
             </li>
             <li>
                 <a href="mailto:m.zibari@gmail.com"><img src="https://i.ibb.co/3cVt30c/email.png" class="contact"></a>
@@ -75,6 +83,9 @@
             </li>
         </ul>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
