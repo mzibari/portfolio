@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(rgb(55, 40, 95), black);
     background-repeat: initial;
@@ -14,11 +18,21 @@ h1, h2 {
 }
 
 nav, footer {
-    height: 50px;
+    height: initial;
+}
+
+footer{
+    border-top: 1px solid rgb(128, 82,128);
+    padding-top: 5px;
+}
+
+span{
+    font-weight: bolder;
 }
 
 footer ul {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     padding: 0px 40px 0px 40px;
 }
 
@@ -36,6 +50,7 @@ img {
 .logos, .contact {
     width: 30px;
     height: 30px;
+    margin-top: 10px;
 }
 
 .contact {
@@ -72,43 +87,62 @@ img {
 
 ul {
     list-style: none;
-    display: flex;
     padding: 0;
+    margin: 0;
 }
 
-ul li ul li {
-    opacity: 0;
-    transition: opacity .25s ease;
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid rgb(128, 82,128);
+    width: 100%;
 }
 
-.nav li ul{
-    display: flex;
-    flex-direction: column;
+.menu {
+    margin: 0 30px 0 0;
+    text-align: center;
+    display: none;
 }
 
-ul li ul li a{
-    display: block;
-    width: 100px;
-    background: rgb(178, 98, 125, 0.5);
-    margin-bottom: 5px;
-    border-radius: 2px;
-}
-
-ul li a{
+.menu a {
+    clear: right;
     text-decoration: none;
+    line-height: 70px;
+    display: block;
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+    background-color: rgb(55, 40, 95);
+    z-index: 9999;
+    position: relative;
+    width: 96vw;
+    font-size: 1.2em;
 }
 
-ul li:hover ul li {
-    opacity: 1;
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    cursor: pointer;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked+.menu {
+    display: block;
 }
 
 .technology {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0px 40px;
 }
 
-div {
+.info-divs {
     font-family: 'Fanwood Text';
     font-size: 18px;
     text-align: initial;
@@ -118,7 +152,7 @@ div {
     padding: 5px 15px;
     border-radius: 5px;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     background-color: rgb(128, 82, 128, 0.5);
     box-shadow: 0px 0px 4px rgb(178, 98, 125);
 }
@@ -127,7 +161,7 @@ div {
     display: none;
 }
 
-.mobile{
+.mobile {
     margin: auto;
     display: block;
 }
@@ -144,10 +178,26 @@ div {
         line-height: 30px;
         width: 80%;
     }
-
-    .headshot{
+    .headshot {
         width: 150px;
         height: 150px;
+    }
+    label {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .menu a {
+        border: 0;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+
+    .info-divs{
+        margin-bottom: 5%;
     }
 }
 
@@ -162,16 +212,14 @@ div {
         display: block;
         margin: auto;
     }
-    .headshot{
+    .headshot {
         width: 200px;
         height: 200px;
     }
-
     .logos, .contact {
         width: 40px;
         height: 40px;
     }
-    
 }
 
 .hide {

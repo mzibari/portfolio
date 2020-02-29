@@ -12,27 +12,23 @@
 
 <body>
     <nav role="navigation">
-        <ul class="nav">
-            <li><img class="burger" id="burger" role="menu" src="https://i.ibb.co/N6WpBGR/hamburger.png">
-                <ul>
-                    <li><a href="#project-section">Projects</a></li>
-                    <li><a href="#contact-info">Contact</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="nav" id="nav">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <a href="#project-section">Projects</a>
+                <a href="#about-section">About</a>
+                <a href="#contact-info">Contact</a>
+            </div>
+        </div>
     </nav>
     <main role="main">
         <header role="banner">
             <h1>Mahmood Nihad</h1>
         </header>
-
         <section class="bio-section">
-            <div class="bio">
-                <p>Mahmood Nihad is a student of the Full Stack Web Development Career Path bootcamp at Thinkful,
-                    an amature photographer and a Gamer. Enjoys dark Souls a lot. Development has been his passion ever
-                    since he was first introduced to the concepts of
-                    programming and how a world problem can be translated into logical statements that a machine can
-                    understand and interpret.
+            <div class="bio info-divs">
+                <p>Mahmood Nihad is a student of the Full Stack Web Development Career Path bootcamp at Thinkful.
                 </p>
             </div>
             <img src="https://i.ibb.co/3dxqs7s/headshot.jpg" class="headshot">
@@ -40,6 +36,7 @@
 
         <section class="project-section" id="project-section">
             <h2>Projects</h2>
+            <h3>Quiz App</h3>
             <a href="https://mzibari.github.io/quiz-bloc/">
                 <img src="https://i.ibb.co/k1rQB4z/quiz-app-mobile.jpg" class="screenshot mobile">
                 <img src="https://i.ibb.co/zX6PpMh/quiz-app-feedback.jpg" class="screenshot desktop">
@@ -59,12 +56,33 @@
                     <img src="https://www.upstatewebbuilders.net/images/jquery.png" class="logos">
                 </li>
             </ul>
-            <div class="project">
-                <p>Quiz App: 10 Trick Questions Quiz<br>
+            <div class="project info-divs">
+                <p>10 Trick Questions Quiz<br>
                     A short quiz that takes the user through 10 tricky questions</p>
+                <p>The app was built using HTML, CSS, JavaScript and JQuery. It was built to demonstrate the ability to
+                    build a fully functional website using the aforementioned technologies</p>
                 <a href="https://mzibari.github.io/quiz-bloc/">Live link</a><br>
                 <a href="https://github.com/mzibari/quiz-bloc">GitHub Repo</a>
 
+            </div>
+        </section>
+
+        <section class="about-section" id="about-section">
+            <h2>About</h2>
+            <div class="about info-divs">
+                <p>
+                    Mahmood is an amature photographer and a gamer. Enjoys Dark Souls a lot. Development has been his
+                    passion ever
+                    since he was first introduced to the concepts of
+                    programming and how a world problem can be translated into logical statements that a machine can
+                    understand and interpret.</p>
+                <p>
+                    He’s proficient in <span>HTML/HTML5, CSS, JavaScript and JQuery,</span> and has a good working
+                    knowledge of <span>Java</span>
+                    and <span>Python</span>. Very comfortable using <span>Git</span> and <span>GitHub</span>
+                    environments. He is always eager to learn new
+                    technologies and ready to adapt to any changes the industry has to offer.
+                </p>
             </div>
         </section>
 
@@ -80,6 +98,12 @@
             </li>
             <li>
                 <a href="tel:6824102016"><img src="https://i.ibb.co/zfq63w4/phone.png" class="contact"></a>
+            </li>
+            <li>
+                <a href="https://github.com/mzibari"><img src="https://i.ibb.co/F3t3rKW/github.png" class="contact"></a>
+            </li>
+            <li>
+                <a href="#nav"><img src="https://i.ibb.co/WsdbFrj/home-52.png" class="contact"></a>
             </li>
         </ul>
     </footer>
