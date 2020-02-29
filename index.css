@@ -63,7 +63,7 @@ img {
     margin-right: 2px;
 }
 
-.headshot {
+.head-shot {
     border-radius: 50%;
     box-shadow: 0px 0px 4px rgb(178, 98, 125);
 }
@@ -178,7 +178,7 @@ label {
         line-height: 30px;
         width: 80%;
     }
-    .headshot {
+    .head-shot {
         width: 150px;
         height: 150px;
     }
@@ -212,7 +212,7 @@ label {
         display: block;
         margin: auto;
     }
-    .headshot {
+    .head-shot {
         width: 200px;
         height: 200px;
     }
