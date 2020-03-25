@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -21,12 +21,12 @@ nav, footer {
     height: initial;
 }
 
-footer{
-    border-top: 1px solid rgb(128, 82,128);
+footer {
+    border-top: 1px solid rgb(128, 82, 128);
     padding-top: 5px;
 }
 
-span{
+span {
     font-weight: bolder;
 }
 
@@ -40,11 +40,6 @@ img {
     height: 100px;
     width: 100px;
     margin-bottom: 7%;
-    transition: opacity .25s ease;
-}
-
-.screenshot:hover {
-    opacity: 0.5;
 }
 
 .logos, .contact {
@@ -95,7 +90,7 @@ ul {
     text-align: right;
     height: 70px;
     line-height: 70px;
-    border-bottom: 1px solid rgb(128, 82,128);
+    border-bottom: 1px solid rgb(128, 82, 128);
     width: 100%;
 }
 
@@ -195,8 +190,7 @@ label {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
     }
-
-    .info-divs{
+    .info-divs {
         margin-bottom: 5%;
     }
 }
@@ -219,6 +213,9 @@ label {
     .logos, .contact {
         width: 40px;
         height: 40px;
+    }
+    .info-divs {
+        width: 60%;
     }
 }
 
