@@ -1,1 +1,1 @@
-![Live Link](https://mzibari.github.io/portfolio/)
+[Live Link](https://mzibari.github.io/portfolio/)
