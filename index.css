@@ -3,6 +3,10 @@
     --background-color: rgb(55, 40, 95);
     --header-footer-border-color: rgb(128, 82, 128);
     --main-divs-color: rgb(128, 82, 128, 0.5);
+    --content-font: 'Tomorrow', sans-serif;
+    --headers-font: 'Notable', sans-serif;
+
+    ;
 }
 
 
@@ -22,7 +26,7 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Quattrocento';
+    font-family: var(--headers-font);
 }
 
 nav, footer {
@@ -109,6 +113,7 @@ ul {
 }
 
 .menu a {
+    font-family: var(--content-font);
     clear: right;
     text-decoration: none;
     line-height: 70px;
@@ -146,7 +151,7 @@ label {
 }
 
 .info-divs {
-    font-family: 'Fanwood Text';
+    font-family: var(--content-font);
     font-size: 18px;
     text-align: initial;
     line-height: 26px;
