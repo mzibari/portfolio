@@ -9,6 +9,24 @@
     ;
 }
 
+.projects{
+    line-height: 26px;
+    height: initial;
+    width: 96%;
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 15%;
+    background-color: var(--main-divs-color);
+    box-shadow: 0px 0px 4px rgb(178, 98, 125);
+}
+
+.project-section{
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background-color: var(--main-divs-color);
+    box-shadow: 0px 0px 4px rgb(178, 98, 125);
+}
 
 html {
     scroll-behavior: smooth;
@@ -146,8 +164,9 @@ label {
 
 .technology {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0px 40px;
+    margin: 5%;
 }
 
 .info-divs {
@@ -161,8 +180,7 @@ label {
     border-radius: 5px;
     margin: auto;
     margin-bottom: 15%;
-    background-color: var(--main-divs-color);
-    box-shadow: 0px 0px 4px rgb(178, 98, 125);
+    
 }
 
 .desktop {
@@ -228,6 +246,10 @@ label {
         height: 40px;
     }
     .info-divs {
+        width: 60%;
+    }
+
+    .projects{
         width: 60%;
     }
 }
