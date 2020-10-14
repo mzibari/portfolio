@@ -1,3 +1,4 @@
+/* Variables for typography */
 :root {
     --font-color: rgb(224, 170, 152);
     --background-color: rgb(55, 40, 95);
@@ -9,6 +10,7 @@
     ;
 }
 
+/* Styling the main projects' sections */
 .projects{
     line-height: 26px;
     height: initial;
@@ -28,6 +30,7 @@
     box-shadow: 0px 0px 4px rgb(178, 98, 125);
 }
 
+/* Makes scroll behavior smooth for when a link to another part of the page is clicked */
 html {
     scroll-behavior: smooth;
 }
@@ -60,6 +63,7 @@ span {
     font-weight: bolder;
 }
 
+/* Styling the Footer */
 footer ul {
     display: flex;
     justify-content: space-around;
@@ -72,6 +76,7 @@ img {
     margin-bottom: 7%;
 }
 
+/* Determining the size of the icons used in technology section and contact information in the footer */
 .logos, .contact {
     width: 30px;
     height: 30px;
@@ -93,6 +98,7 @@ img {
     box-shadow: 0px 0px 4px rgb(178, 98, 125);
 }
 
+/* Styling Apps screenshots */
 .screenshot {
     width: 70%;
     height: initial;
@@ -100,6 +106,7 @@ img {
     margin: 0px;
 }
 
+/* Hamburger Menu */
 .burger {
     border-radius: 0%;
     height: 30px;
@@ -116,6 +123,7 @@ ul {
     margin: 0;
 }
 
+/* Styling Hamburger Menu */
 .nav {
     text-align: right;
     height: 70px;
@@ -130,6 +138,7 @@ ul {
     display: none;
 }
 
+/* Styling items in the Hamburger Menu */
 .menu a {
     font-family: var(--content-font);
     clear: right;
@@ -154,14 +163,17 @@ label {
     float: right;
 }
 
+/* Toggling the class of the Hamburger Menu when it's clicked */
 #toggle {
     display: none;
 }
 
+/* Displaying the options in the Hamburger Menu */
 #toggle:checked+.menu {
     display: block;
 }
 
+/* Styling the icons for technology */
 .technology {
     display: flex;
     justify-content: space-evenly;
@@ -169,6 +181,7 @@ label {
     margin: 5%;
 }
 
+/* Styling the main divs in the page */
 .info-divs {
     font-family: var(--content-font);
     font-size: 18px;
@@ -183,15 +196,18 @@ label {
     
 }
 
+/* Hiding all that is related to the desktop view */
 .desktop {
     display: none;
 }
 
+/* Displaying all that is related to the mobile view */
 .mobile {
     margin: auto;
     display: block;
 }
 
+/* Styling the tablet view */
 @media screen and (min-width: 480px) {
     h1 {
         font-size: 48px;
@@ -226,6 +242,7 @@ label {
     }
 }
 
+/* Styling the desktop view */
 @media screen and (min-width: 768px) {
     div {
         width: 60%;
@@ -254,6 +271,7 @@ label {
     }
 }
 
+/* Hiding the Hamburger Menu */
 .hide {
     display: none;
 }
